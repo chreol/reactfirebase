@@ -6,10 +6,11 @@ import * as routes from '../constants/routes';
 const Navigation = () =>
     <div>
         <ul>
-            <li><link to={routes.SIGN_IN}>SIGN_IN</link></li>
-            <li><link to={routes.LANDING}>LANDING</link></li>
-            <li><link to={routes.HOME}>HOME</link></li>
-            <li><link to={routes.ACCOUNT}>ACCOUNT</link></li>
+            <li><Link to={routes.SIGN_IN}>SIGN_IN</Link></li>
+            <li><Link to={routes.SIGN_UP}>SIGN_UP</Link></li>
+            <li><Link to={routes.LANDING}>LANDING</Link></li>
+            <li><Link to={routes.HOME}>HOME</Link></li>
+            <li><Link to={routes.ACCOUNT}>ACCOUNT</Link></li>
         </ul>
     </div>
 

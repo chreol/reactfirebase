@@ -3,7 +3,7 @@ import 'firebase/auth';
 import { FirebaseAuth } from '@firebase/auth-types';
 
 
-const config ={
+const config = {
     apiKey: "AIzaSyA8oIhjdD729nz3ZBMGFJKpeXDLEQjC-n0",
     authDomain: "reactfirebase-2a905.firebaseapp.com",
     databaseURL: "https://reactfirebase-2a905.firebaseio.com",

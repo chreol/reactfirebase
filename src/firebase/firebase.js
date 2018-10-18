@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import { FirebaseAuth } from '@firebase/auth-types';
+import { firebaseAuth } from '@firebase/auth-types';
 
 
 const config = {

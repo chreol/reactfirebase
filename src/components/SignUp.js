@@ -14,8 +14,8 @@ import { auth } from 'firebase';
     const INITIAL_STATE = {
         username: '',
         email: '',
-        PasswordOne: '',
-        PasswordTwo: '',
+        passwordOne: '',
+        passwordTwo: '',
         error: null,
         
     };
@@ -36,14 +36,14 @@ import { auth } from 'firebase';
         const {
                 username,
                 email,
-                PasswordOne,
+                passwordOne,
             }= this.state;
         
         const {
             history,
         } = this.props;
 
-        auth.doCreateUserWithEmailAndPassword(email, PasswordOne)
+        auth.doCreateUserWithEmailAndPassword(email, passwordOne)
         .then(authUser => {
             this.setState({
                ...INITIAL_STATE });
@@ -59,13 +59,13 @@ import { auth } from 'firebase';
         const {
             username,
             email,
-            PasswordOne,
-            PasswordTwo,
+            passwordOne,
+            passwordTwo,
             error,
         } = this.state;
 
     const isInvalid =
-    PasswordOne !== PasswordTwo || PasswordOne ===
+    passwordOne !== passwordTwo || passwordOne ===
     '' || email === '' || username === '';
 
         return(
@@ -81,11 +81,11 @@ import { auth } from 'firebase';
                 onChange={event => this.setState(byPropKey('email',
                 event.target.value))} type="text" placeholder="Email Address"/>
                 
-                <input value={PasswordOne} onChange={event => this.setState(byPropKey('passwordOne', 
+                <input value={passwordOne} onChange={event => this.setState(byPropKey('passwordOne', 
                 event.target.value))} type="password" 
                 placeholder="Password" />
 
-                <input value={PasswordTwo} onChange={event => this.setState(byPropKey('passwordTwo', 
+                <input value={passwordTwo} onChange={event => this.setState(byPropKey('passwordTwo', 
                 event.target.value))} type="password" 
                 placeholder="Confirm Password" />
 

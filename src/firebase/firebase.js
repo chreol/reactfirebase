@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import { firebaseAuth } from '@firebase/auth-types';
+// import { firebaseAuth } from 'firebase/auth-types';
 
 
 const config = {
@@ -20,5 +20,5 @@ const config = {
   const auth = firebase.auth();
 
 export {
-    auth,
+    auth
 };

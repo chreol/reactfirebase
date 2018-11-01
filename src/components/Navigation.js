@@ -15,13 +15,10 @@ const Navigation = () =>
     }
     </AuthUserContext.Consumer>
 
-const Navigation = ({ authUser }) =>
-    <div>
-        { authUser
-            ? <NavigationAuth />
-            : <NavigationAuth />
-        }
-    </div>
+// const Navigation = ({ authUser }) =>
+//     <div>
+//         { authUser ? <NavigationAuth />  : <NavigationAuth />}
+//     </div>
 
 const NavigationAuth = () =>
     

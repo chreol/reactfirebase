@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-import * as routes from '../constants/routes';
 import { auth } from 'firebase';
+import * as routes from '../constants/routes';
 
 
-    const SignUpPage = ({ history }) =>
+
+const SignUpPage = ({ history }) =>
         <div>
             <h1>Sign Up Page</h1>
             <SignUpForm history={history}/>
@@ -30,11 +31,12 @@ import { auth } from 'firebase';
         constructor(props) {
             super(props);
             
-            this.state = { ...INITIAL_STATE};
+            this.state = { ...INITIAL_STATE };
+
         }
         onSubmit = (event) => {
         const {
-                username,
+            username,
                 email,
                 passwordOne,
             }= this.state;
@@ -57,12 +59,14 @@ import { auth } from 'firebase';
         }
     render(){
         const {
+            
             username,
             email,
             passwordOne,
             passwordTwo,
             error,
-        } = this.state;
+            } = this.state;
+           
 
     const isInvalid =
     passwordOne !== passwordTwo || passwordOne ===

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { auth } from '../firebase';
 
@@ -62,6 +62,7 @@ class PasswordChangeForm extends Component{
     }
 }
 
+export default PasswordChangeForm;
 
 // const PasswordChangePage = () =>
 //     <div>
